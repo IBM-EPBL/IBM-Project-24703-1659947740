@@ -1,0 +1,21 @@
+@font-face{
+	font-family: poppins;
+	src: url("../assets/Poppins/Poppins-Regular.ttf")
+}
+body{
+	font-family:poppins;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100vh;
+	margin:0px;
+}
+h3,h5,p{
+	margin:0px;
+}
+.container{
+	width:75%;
+	height:max-content;
+	border:1px solid #d3d7cf;
+	box-shadow:4px 4px 8px rgb(0,0,0,0.25);
+}
