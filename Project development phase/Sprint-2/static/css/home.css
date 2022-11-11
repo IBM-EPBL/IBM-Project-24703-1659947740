@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+  margin: 0px 0px;
+  font-family: 'Poppins', sans-serif;
+}
+.navbar{
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  background-color: #262a41;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logland {
+  background-color: white;
+  border-radius: 10px;
+  width:max-content;
+  width:800px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login ,.login > form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.line{
+  height:90%;
+  width:3px;
+  border-radius:0px 50% 0px 50%;
+  background-color:black;
+}
+.dash{
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+h3{
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+.frm input{
+    height:30px;
+    border-radius:0px 10px 10px 0px;
+    border:2px solid gray; 
+    border-left: none;
+    transition: 1s ease;
+    outline:none;
+    min-width:250px;
+    padding-left: 10px;
+}
+.frm input[type=file]{
+	border:none;
+}
+.frm>input:focus{
+    border:2px solid rgb(29, 98, 247);
+}
+.icon-input{
+    border:2px solid gray;
+    display: flex;
+    align-items: center;
+    margin:10px 0px;
+}
+.icon-input>i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width:30px;
+  color:white;
+  background-color:#262a41;
+  border-radius:10px 0px 0px 10px;
+  font-size:16px;
+  height:36px;
+}
+
+input{
+    font-family: 'Quicksand', sans-serif;
+}
+.frm button{
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #00E676;
+    cursor: pointer;
+}
+.frm button:hover{
+    color: #00E676;
+    background-color: black;
+}
+
+.header{
+    position:fixed;
+    top:0px;
+    left:0px;
+    background-color:#4affc391;
+    width:100%;
+    padding:30px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-sizing:border-box
+}
+
+.header>div{
+    display:flex;
+    align-items:center;
+}
+.nav{
+    margin:0px 20px;
+    cursor:pointer;
+}
