@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="header">
+      <div style="font-size:20px;">WELCOME {{user}}</div>
+      <div>
+        <div class="nav">PROFILE</div>
+        <div class="nav">LOGOUT</div>
+      </div>
+    </div>
+    <script>
+      function act(e){
+        e.preventDefault()
+        console.log(e.target.file.files[0])
+        alert("hii")
+      }
+    </script>
+    <div class="container">
+      <div class="logland" style="overflow:hidden">
+      <div style="width:500px;background-image:url('static/my_app_side.jpg');background-position:right;height:100%">
+        </div>
+        <div class="login" style="padding:0px 50px">
+          <h3>Upload Image</h>
+          <form class="frm" method="post" action=""  action="/home" enctype = "multipart/form-data">
+          <br/>
+          <p style="font-size:12px;font-weight:lighter">Please Upload an image to get your <br/>food nutrition</p>
+            <div class="icon-input">
+                <input type="file" accept="image/*" name="file"/><br />
+                <input type="text" name="filePath" style="display:none"/><br />
+            </div>
+            <button>Upload</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
