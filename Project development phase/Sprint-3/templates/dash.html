@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUTRIFY</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="https://nutri24.s3.jp-tok.cloud-object-storage.appdomain.cloud/style.css">
+    <style>
+        /*set a style for the buttons*/
+    button {
+        background-color: #29afa4;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+   
+    /* set a hover effect for the button*/
+    button:hover {
+        opacity: 0.8;
+    }
+   
+   
+    /*set padding to the container*/
+    .container {
+        padding: 16px;
+    }
+     
+    /*set the forgot password text*/
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section Starts Here -->
+    <section id="home" class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="https://nutri24.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo%20-%20Copy.jpeg" alt="Logo" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="{{url_for('viewprofile')}}">View Profile</a>
+                    </li>
+                    <li>
+                        <a href="#abt">Food analyzer</a>
+                    </li>
+                    
+                    <li>
+                        <a href="{{url_for('search_page')}}">Recipes</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('feedback')}}">Feedback</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('logout')}}"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Logout</button></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Navbar Section Ends Here -->
+    <section class="food-search ">
+        <div class="imge">
+       <div class="container">
+        <h3 class="content"> GET YOUR <br>NUTRITIONS CHECK<br> WITH NUTRIFY</h3>
+       </div>
+    </div>
+    </section>
+    </body>
+    </html>

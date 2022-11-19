@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Recipes searcher {% endblock %}
+{% block body %}
+<h2 style="text-align: center"> <a href="/" style="text-decoration: none; color:rgb(0, 26, 255)"> Recipes for you: </a></h2>
+<div style="margin-left:35%;">
+  <ul class="list-unstyled">
+      {% for recipe in recipes %}
+          <li class="media">
+              <img src="{{recipe['image']}}" class="align-self-center mr-3" alt="..." width="15%" height="15%">
+              <div class="media-body">
+                  <h5 class="mt-0 mb-1"><a href="/recipe?id={{ recipe['id'] }}">{{ recipe['name'] }}</a></h5>
+                
+                      How many minutes for preparation? {{recipe['prepareTime']}} <br>
+                      How many minutes for cooking? {{recipe['cookTime']}}  <br>
+                      How many servings has this recipe? {{recipe['servings']}}  <br>
+                  
+          </li> <br>
+      {% endfor %}
+  </ul>
+</div >
+{% endblock %}

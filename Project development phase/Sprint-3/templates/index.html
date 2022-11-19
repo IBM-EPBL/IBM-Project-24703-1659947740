@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUTRIFY</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="https://nutri24.s3.jp-tok.cloud-object-storage.appdomain.cloud/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section Starts Here -->
+    <section id="home" class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/logo.png" alt="Logo" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="{{url_for('home')}}">Home</a>
+                    </li>
+                    <li>
+                        <a href="#abt">About us</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('login')}}">Login</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('register')}}">Register</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Navbar Section Ends Here -->
+    <section class="food-search ">
+        <div class="imge">
+       <div class="container">
+        <h3 class="content"> GET YOUR <br>NUTRITIONS CHECK<br> WITH NUTRIFY</h3>
+       </div>
+    </div>
+    </section>
+    
+    
+    <!-- Image Section Ends Here -->
+
+    <!-- About us image Section Starts Here -->
+    <section id="abt" class="categories">
+        <div class="container">
+            <h2 class="text-center">About us</h2>
+
+            <a href="category-foods.html">
+            <div class="box-3 float-container">
+                <img src="https://nutri24.s3.jp-tok.cloud-object-storage.appdomain.cloud/calories-counting-diet.jpg" alt="food" class="img-responsive img-curve">
+
+                <h3 class="float-text text-black">Food Analyzer</h3>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="box-3 float-container">
+                <img src="https://nutri24.s3.jp-tok.cloud-object-storage.appdomain.cloud/Quick-and-Easy-Dinner-Recipes-Pin.jpeg" alt="Recipies" class="img-responsive img-curve">
+
+                <h3 class="float-text text-black ">Recipies</h3>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="box-3 float-container">
+                <img src="https://nutri24.s3.jp-tok.cloud-object-storage.appdomain.cloud/woman-doing-strength-exercises.jpg" alt="exercrise" class="img-responsive img-curve">
+
+                <h3 class="float-text text-black ">Quick Workouts</h3>
+            </div>
+            </a>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Categories Section Ends Here -->
+    <!-- About us Section Ends Here -->
+    <section class="our-focus">
+        <div class="card-container">
+          <div class="row ml-3 mt-3">
+            <div class="col-lg-3 mr-5" id="focus-first">
+              <div class="card" style="width: 19rem;">
+                <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-h5">Food Analyzer</h5>
+                  <p class="card-text">SMARTBRIDGE is an edTech organization with a vision to bridge the gap between academia & industry. Our outcome-based experiential learning programs on emerging technologies (Internet of Things, Machine Learning, Data Science, Artificial Intelligence, Robotics) are building skilled entry - level engineers, for the corporate world. .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mr-5" id="focus-first">
+                <div class="card" style="width: 19rem;">
+                  <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+                  <div class="card-body">
+                    <h5 class="card-h5">Recipies</h5>
+                    <p class="card-text">SMARTBRIDGE is an edTech organization with a vision to bridge the gap between academia & industry. Our outcome-based experiential learning programs on emerging technologies (Internet of Things, Machine Learning, Data Science, Artificial Intelligence, Robotics) are building skilled entry - level engineers, for the corporate world. .
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mr-5" id="focus-first">
+                <div class="card" style="width: 19rem;">
+                  <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+                  <div class="card-body">
+                    <h5 class="card-h5">Quick Workouts</h5>
+                    <p class="card-text">SMARTBRIDGE is an edTech organization with a vision to bridge the gap between academia & industry. Our outcome-based experiential learning programs on emerging technologies (Internet of Things, Machine Learning, Data Science, Artificial Intelligence, Robotics) are building skilled entry - level engineers, for the corporate world. .
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    
+    <!-- fOOD Menu Section Ends Here -->
+
+    <!-- social Section Starts Here -->
+    <section id="contact" class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- social Section Ends Here -->
+
+    <!-- footer Section Starts Here -->
+    <section id="contact" class="footer">
+        <div class="container text-center">
+            <p>All rights reserved.</p>
+            <p>+91 9876431349</p>
+        </div>
+    </section>
+    <!-- footer Section Ends Here -->
+
+</body>
+</html>
