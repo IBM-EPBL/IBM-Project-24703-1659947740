@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} {{recipe['title']}} {% endblock %}
+{% block body %}
+
+<div style="max-width: 70%; margin: auto; padding-top:3%">
+  <div class="media">
+      <img src="{{recipe['image']}}" class="mr-3" alt="..." width="20%" height="20%">
+      <div class="media-body">
+        <h4 class="mt-0">{{recipe['name']}}</h4>
+        {{recipe['description']}}
+      </div>
+  </div><br>
+  <h3>Ingredients</h3>
+  {% for item in recipe['ingredients'] %}
+      {{item['name'] }}<br>
+      <p>{{item['servingSize']}}
+  {% endfor %}
+  <br>
+  <h3>Steps</h3>
+  {% for item in recipe['steps'] %}
+    <p>{{item }}</p><br>
+  {% endfor %}
+  <br>
+  <h3>Nutrients</h3>
+  {% for key,value in recipe['nutrients'].items() %}
+    <p>{{key }} :{{value}}</p>
+  {% endfor %}
+</div>
+{% endblock %}

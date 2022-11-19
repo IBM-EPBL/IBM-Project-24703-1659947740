@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} Recipes searcher {% endblock %}
+{% block body %}
+
+
+
+<center>
+  <h2 style="padding-top: 3%;">
+      It's time for cooking! What do you have in the fridge? <br>
+      
+  </h2>
+  <br><br>
+  <form action="/recipes" >
+      <div class="input-group mb-3" style="max-width: 50%;">
+          <input type="text" class="form-control" placeholder="Apple, flour, sugar" aria-label="Ingridients" aria-describedby="button-addon2" name="ingridients">
+          <input type="text" class="form-control" placeholder=" Included" aria-label="Ingridients" aria-describedby="button-addon2" name="included">
+          <input type="text" class="form-control" placeholder=" Excluded" aria-label="Ingridients" aria-describedby="button-addon2" name="excluded">
+          <input type="text" class="form-control" placeholder=" Tags" aria-label="Ingridients" aria-describedby="button-addon2" name="tag">
+       
+          <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+          </div>          
+      </div>
+  </form>
+</center>
+{% endblock %}
